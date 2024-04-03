@@ -1,4 +1,4 @@
-SET DATABASE UNIQUE NAME HSQLDB8EA10E9C4A
+SET DATABASE UNIQUE NAME HSQLDB8EA52D7EAB
 SET DATABASE DEFAULT RESULT MEMORY ROWS 0
 SET DATABASE EVENT LOG LEVEL 0
 SET DATABASE TRANSACTION CONTROL LOCKS
@@ -29,7 +29,7 @@ SET FILES NIO TRUE
 SET FILES NIO SIZE 256
 SET FILES LOG TRUE
 SET FILES LOG SIZE 50
-SET FILES CHECK 458
+SET FILES CHECK 848
 SET DATABASE COLLATION "SQL_TEXT" PAD SPACE
 CREATE USER SA PASSWORD DIGEST 'd41d8cd98f00b204e9800998ecf8427e'
 ALTER USER SA SET LOCAL TRUE
@@ -54,7 +54,10 @@ GRANT DBA TO SA
 SET SCHEMA SYSTEM_LOBS
 INSERT INTO BLOCKS VALUES(0,2147483647,0)
 SET SCHEMA PUBLIC
-INSERT INTO "flyway_schema_history" VALUES(1,'1','create-table-events','SQL','V1__create-table-events.sql',-1174060697,'SA','2024-04-02 20:04:33.422213',3,'1')
-INSERT INTO "flyway_schema_history" VALUES(2,'2','create-table-attendees','SQL','V2__create-table-attendees.sql',772164937,'SA','2024-04-02 20:04:33.441201',2,'1')
-INSERT INTO "flyway_schema_history" VALUES(3,'3','create-table-checkins','SQL','V3__create-table-checkins.sql',-378327417,'SA','2024-04-02 20:04:33.455192',2,'1')
-INSERT INTO "flyway_schema_history" VALUES(4,'4','create-indexes','SQL','V4__create-indexes.sql',-781485658,'SA','2024-04-02 20:04:33.469185',1,'1')
+INSERT INTO "flyway_schema_history" VALUES(1,'1','create-table-events','SQL','V1__create-table-events.sql',-1174060697,'SA','2024-04-03 15:16:46.296190',3,'1')
+INSERT INTO "flyway_schema_history" VALUES(2,'2','create-table-attendees','SQL','V2__create-table-attendees.sql',772164937,'SA','2024-04-03 15:16:46.310183',2,'1')
+INSERT INTO "flyway_schema_history" VALUES(3,'3','create-table-checkins','SQL','V3__create-table-checkins.sql',-378327417,'SA','2024-04-03 15:16:46.322175',1,'1')
+INSERT INTO "flyway_schema_history" VALUES(4,'4','create-indexes','SQL','V4__create-indexes.sql',-781485658,'SA','2024-04-03 15:16:46.335167',2,'1')
+INSERT INTO EVENTS VALUES('1a9ceea9-1d7a-4c52-bb33-5e5b18e1497e','Rocketseat NLW','Aprenda Java de forma Gratuita!','rocketseat-nlw',500)
+INSERT INTO EVENTS VALUES('bb5d8c81-8cba-4613-a373-ff8085cac816','Rocketseat NLW Unite','Aprenda v\u00e1rias tecnologias de forma Gratuita e online!','rocketseat-nlw-unite',1000)
+INSERT INTO ATTENDEES VALUES('bb5d8c81-8cba-4613-a373-ff8085cac816','Thiago Peres','thiagoperes@thiagoperes@hotmail.com','bb5d8c81-8cba-4613-a373-ff8085cac816',NULL)
