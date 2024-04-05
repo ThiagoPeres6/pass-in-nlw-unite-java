@@ -83,3 +83,5 @@ CREATE UNIQUE INDEX "attendees_event_id_email_key" ON "attendees"("event_id", "e
 CREATE UNIQUE INDEX "check_ins_attendeeId_key" ON "check_ins"("attendeeId");
 
 ```
+## AGRADECIMENTOS
+Gostaria de agradecer a Rocketseat por providenciar o evento NLW Unite onde tive a oportunidade de desenvolver esse projeto e expandir meus conhecimentos!
